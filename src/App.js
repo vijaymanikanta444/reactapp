@@ -1,18 +1,21 @@
 import React from 'react';
-import Wish from './components/Wish';
+// import Wish from './components/Wish';
+// import Gallery from './components/Gallery';
+// import Persons from './components/Persons';
+// import PersonsList from './components/PersonsList';
+// import Counter from './components/Counter';
+import TextBox from './components/TextBox';
 
 class App extends React.Component {
-  state = {
-    show: true,
-  };
-  handleClick = () => {
-    this.setState({ show: !this.state.show });
-  };
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Click me</button>
-        {this.state.show && <Wish name="vijay" />}
+        {/* <Wish /> */}
+        {/* <Counter /> */}
+        {/* <Gallery /> */}
+        {/* <Persons /> */}
+        {/* <PersonsList /> */}
+        <TextBox />
       </div>
     );
   }
