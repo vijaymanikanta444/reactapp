@@ -23,3 +23,13 @@ code {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.delete {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+.para {
+  background-color: yellow;
+  width: auto;
+}

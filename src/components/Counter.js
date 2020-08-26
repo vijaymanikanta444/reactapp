@@ -7,7 +7,9 @@ export default class Counter extends Component {
   };
   increment = () => {
     // this.setState({ show: !this.state.show });
-    this.setState({ count: this.state.count + 1 });
+    if (this.state.count < 10) {
+      this.setState({ count: this.state.count + 1 });
+    }
   };
   decrement = () => {
     this.setState({ count: this.state.count - 1 });
@@ -18,12 +20,18 @@ export default class Counter extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.increment}>Increment</button>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.decrement}>Decrement</button>
+      <div className="container">
+        <button className="btn" onClick={this.decrement}>
+          Decrement
+        </button>
+        <span>{this.state.count}</span>
+        <button className="btn" onClick={this.increment}>
+          Increment
+        </button>
         <br />
-        <button onClick={this.reset}>reset</button>
+        <button className="btn" onClick={this.reset}>
+          reset
+        </button>
       </div>
     );
   }

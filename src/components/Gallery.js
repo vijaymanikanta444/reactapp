@@ -10,7 +10,9 @@ export default class Gallery extends Component {
     i: 0,
   };
   onStartClick = () => {
-    if (!this.interval) this.interval = setInterval(this.next, 500);
+    if (!this.interval) {
+      this.interval = setInterval(this.next, 500);
+    }
   };
 
   previous = () => {
