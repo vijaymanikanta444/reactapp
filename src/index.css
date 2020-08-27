@@ -18,10 +18,12 @@ code {
   text-align: center;
 }
 .btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%; */
+  margin: 0;
 }
 
 .delete {
@@ -32,4 +34,45 @@ code {
 .para {
   background-color: yellow;
   width: auto;
+}
+
+.register {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+}
+.input {
+  padding: 5px 0;
+  margin: 0px;
+}
+
+.form {
+  margin: 10px 250px;
+}
+
+.control {
+  margin-right: 30%;
+}
+.grp {
+  margin-right: 30%;
+  padding: 0;
+}
+
+.tHead {
+  background-color: #85c1e9;
+}
+
+.blank {
+  color: red;
+  padding: 0;
+  margin-left: 0;
+}
+.table {
+  padding: 0;
+}
+.btn-full {
+  width: 100%;
+}
+.btn-bottom {
+  margin-bottom: 10px;
 }
